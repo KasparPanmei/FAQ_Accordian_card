@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="shortcut icon" href="./images/favicon-32x32.png" sizes="32x32" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <div class="contents container text-center">
+      <div class="row justify-content-md-center">
+        <div class="col-md-auto">
+         <div class="first-column">
+          <img src="./images/first-column-image.png" alt="">
+         </div>
+         <div class="second-column">
+          <div class="head">
+            <h2 style="text-align:left;">FAQ</h2>
+            <div class="summary-flex">
+              <div class="first-display">
+                <h6>How many team members can I invite?</h6>
+              </div>
+              <div class="arrow-down">
+                <a href="#" id="btn-drp" onclick="drop_down1()" ondblclick="drop_down_cancel1()"><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></a>
+                <div class="drop-down" id="summary1" style="display:none;">
+                  <p>You can invite up to 2 additional users on the Free plan. There is no limit on 
+                    team members for the Premium plan.</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="summary-flex">
+              <div class="first-display">
+                <h6>What is the maximum file upload size?</h6>
+              </div>
+              <div class="arrow-down">
+                <a href="#" id="btn-drp" onclick="drop_down2()" ondblclick="drop_down_cancel2()"><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></a>
+                <div class="drop-down" id="summary2" style="display:none;">
+                  <p>
+                    No more than 2GB. All files in your account must fit your allotted storage space.</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="summary-flex">
+              <div class="first-display">
+                <h6>How do I reset my password?</h6>
+              </div>
+              <div class="arrow-down">
+                <a href="#" id="btn-drp" onclick="drop_down3()" ondblclick="drop_down_cancel3()"><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></a>
+                <div class="drop-down" id="summary3" style="display:none;">
+                  <p>Click “Forgot password” from the login page or “Change password” from your profile page.
+                    A reset link will be emailed to you.</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="summary-flex">
+              <div class="first-display">
+                <h6>Can I cancel my subscription?</h6>
+              </div>
+              <div class="arrow-down">
+                <a href="#" id="btn-drp" onclick="drop_down4()" ondblclick="drop_down_cancel4()"><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></a>
+                <div class="drop-down" id="summary4" style="display:none;">
+                  <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="summary-flex">
+              <div class="first-display">
+                <h6>Do you provide additional support?</h6>
+              </div>
+              <div class="arrow-down">
+                <a href="#" id="btn-drp" onclick="drop_down5()" ondblclick="drop_down_cancel5()"><svg width="10" height="7" xmlns="http://www.w3.org/2000/svg"><path d="M1 .799l4 4 4-4" stroke="#F47B56" stroke-width="2" fill="none" fill-rule="evenodd"/></svg></a>
+                <div class="drop-down" id="summary5" style="display:none;">
+                  <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </div>
+         </div>
+        </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<script>
+  function drop_down1()
+  {
+    document.getElementById('summary1').style.display="inline-block";
+  }
+  function drop_down_cancel1()
+  {
+    document.getElementById('summary1').style.display="none";
+  }
+  function mouse_out()
+  {
+    document.getElementById('summary1').style.display="none";
+  }
+
+
+
+
+
+
+  function drop_down2()
+  {
+    document.getElementById('summary2').style.display="inline-block";
+  }
+  function drop_down_cancel2()
+  {
+    document.getElementById('summary2').style.display="none";
+  }
+  function drop_down3()
+  {
+    document.getElementById('summary3').style.display="inline-block";
+  }
+  function drop_down_cancel3()
+  {
+    document.getElementById('summary3').style.display="none";
+  }
+  function drop_down4()
+  {
+    document.getElementById('summary4').style.display="inline-block";
+  }
+  function drop_down_cancel4()
+  {
+    document.getElementById('summary4').style.display="none";
+  }
+  function drop_down5()
+  {
+    document.getElementById('summary5').style.display="inline-block";
+  }
+  function drop_down_cancel5()
+  {
+    document.getElementById('summary5').style.display="none";
+  }
+</script>
+</html>
